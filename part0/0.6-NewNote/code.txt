@@ -1,0 +1,11 @@
+
+note over browser:
+when we posting a new note,
+browser send only one request
+end note
+note over browser:
+The data is sent as JSON-data.
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+server-->browser: The server responds with status code 201
